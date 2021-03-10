@@ -24,6 +24,11 @@ const routes = [
       isLogin ? next({ name: 'Home' }) : next();
     },
   },
+  {
+    path: '/shop/:id',
+    name: 'Shop',
+    component: () => import(/* webpackChunkName: "shop" */ '../views/shop/Shop'),
+  },
 ];
 
 const router = createRouter({
