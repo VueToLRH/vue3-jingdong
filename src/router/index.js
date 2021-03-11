@@ -34,6 +34,11 @@ const routes = [
     name: 'CartList',
     component: () => import(/* webpackChunkName: "cartList" */ '../views/cartList/CartList'),
   },
+  {
+    path: '/orderList',
+    name: 'OrderList',
+    component: () => import(/* webpackChunkName: "orderList" */ '../views/orderList/OrderList'),
+  },
 ];
 
 const router = createRouter({
