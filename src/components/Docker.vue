@@ -20,7 +20,7 @@ export default {
   setup() {
     const dockerList = [
       { icon: '&#xe6f3;', text: '首页', to: { name: 'Home' } },
-      { icon: '&#xe7e5;', text: '购物车', to: { name: 'Home' } },
+      { icon: '&#xe7e5;', text: '购物车', to: { name: 'CartList' } },
       { icon: '&#xe61e;', text: '订单', to: { name: 'Home' } },
       { icon: '&#xe660;', text: '我的', to: { name: 'Home' } },
     ];
