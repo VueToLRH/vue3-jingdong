@@ -30,6 +30,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "shop" */ '../views/shop/Shop'),
   },
   {
+    path: '/orderConfirmation/:id/:addressId?',
+    name: 'OrderConfirmation',
+    component: () =>
+      import(
+        /* webpackChunkName: "orderConfirmation" */ '../views/orderConfirmation/OrderConfirmation'
+      ),
+  },
+  {
     path: '/cartList',
     name: 'CartList',
     component: () => import(/* webpackChunkName: "cartList" */ '../views/cartList/CartList'),
@@ -55,6 +63,14 @@ const routes = [
     name: 'UpsertAddress',
     component: () =>
       import(/* webpackChunkName: "upsertAddress" */ '../views/upsertAddress/UpsertAddress'),
+  },
+  {
+    path: '/chooseAddressList/:shopId',
+    name: 'ChooseAddressList',
+    component: () =>
+      import(
+        /* webpackChunkName: "chooseAddressList" */ '../views/chooseAddressList/ChooseAddressList'
+      ),
   },
 ];
 
