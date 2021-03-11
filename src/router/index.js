@@ -44,6 +44,18 @@ const routes = [
     name: 'PersonalInfo',
     component: () => import(/* webpackChunkName: "person" */ '../views/personalInfo/PersonalInfo'),
   },
+  {
+    path: '/myAddressList',
+    name: 'MyAddressList',
+    component: () =>
+      import(/* webpackChunkName: "myAddressList" */ '../views/myAddressList/MyAddressList'),
+  },
+  {
+    path: '/upsertAddress/:id?',
+    name: 'UpsertAddress',
+    component: () =>
+      import(/* webpackChunkName: "upsertAddress" */ '../views/upsertAddress/UpsertAddress'),
+  },
 ];
 
 const router = createRouter({
